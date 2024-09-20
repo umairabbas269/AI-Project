@@ -5,7 +5,7 @@ import json
 import re
 from datetime import datetime
 import ollama  # Importing the Ollama library
-import rocksdb  # Importing RocksDB
+from openai import OpenAI
 
 # Initialize logging
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
@@ -16,17 +16,16 @@ if not OPENAI_API_KEY:
     st.error("OpenAI API key is missing. Please set the OPENAI_API_KEY environment variable.")
     st.stop()
 
-# Initialize RocksDB
-db = rocksdb.DB("cache.db", rocksdb.Options(create_if_missing=True))
+# Initialize an in-memory cache
+cache = {}
 
 # Function to load from cache
 def load_from_cache(key):
-    value = db.get(key.encode('utf-8'))
-    return value.decode('utf-8') if value else None
+    return cache.get(key)
 
 # Function to save to cache
 def save_to_cache(key, value):
-    db.put(key.encode('utf-8'), value.encode('utf-8'))
+    cache[key] = value
 
 # Define a class to manage prompts
 class PromptManager:
