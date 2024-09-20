@@ -25,7 +25,7 @@ To set up MCQ Generator on your local machine, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/mcq-generator.git
+   git clone https://github.com/csv610/mcq_generator.git
    cd mcq-generator
    ```
 
