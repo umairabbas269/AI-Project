@@ -5,10 +5,6 @@ Generating Multi-Choices Questions (MCQ) that evaluates diverse knowledge of the
 very challenging and time-consuming task. Large Language Models (LLMs) hold a promising method that can 
 be useful while meeting the objectives of the MCQ.
 
-## Using the Power of AI in Question Generation
-
-Our MCQ Generator leverages new AI models, including **OpenAI's GPT** and the **open-source Ollama framework**, to generate thoughtful, relevant, and challenging questions. These models allow the tool to create questions that are not only grammatically accurate but also contextually relevant, tailored to various subjects and difficulty levels.
-
 ### Key Features
 
 #### 1. Flexible Model Selection
