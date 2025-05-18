@@ -5,6 +5,8 @@ class QuestionTranslator:
         self.model = model
         self.prompt_builder = PromptBuilder()
 
+# This is a single-line comment
+
     def translate_text(self, text, language):
         prompt = self.prompt_builder.build_translate_text_prompt(text, language)
         response = self.model.get_response([{"role": "user", "content": prompt}])

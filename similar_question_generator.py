@@ -1,6 +1,8 @@
 from prompt_builder import PromptBuilder
 from llm_model import LLMModel, OpenAIModel
 
+# This is a single-line comment
+
 class SimilarQuestionGenerator:
     def __init__(self, model):
         self.model = model

@@ -6,6 +6,8 @@ import logging
 # Configure logging to write to a file
 logging.basicConfig(filename='question_generator.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# This is a single-line comment
+
 class QuestionGenerator:
     def __init__(self, model: LLMModel):
         self.model = model

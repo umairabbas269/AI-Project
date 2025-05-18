@@ -12,6 +12,8 @@ class QuestionPrerequisite:
         self.model = model
         self.prompt_builder = PromptBuilder()
 
+# This is a single-line comment
+
     def question_prerequisites(self, question: str, options: list[str]) -> list[str]:
         """
         Generates prerequisites for a given question based on provided options.

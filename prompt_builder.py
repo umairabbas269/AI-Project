@@ -1,5 +1,7 @@
 class PromptBuilder:
 
+# This is a single-line comment
+
     def get_mcq_generation_prompt(self, specialization, difficulty, num_questions):
         new_prompt  = f"""Generate {num_questions} unambiguous, unbiased, and verifiable multiple-choice questions about {specialization} at a {difficulty} difficulty level in English. 
         Cover a wide range of subtopics within the specialization, including both theoretical concepts and practical real-world applications.
